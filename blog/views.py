@@ -6,7 +6,7 @@ from taggit.models import Tag
 
 
 def test(request):
-    return render(request, 'base.html')
+    return render(request, 'blog/home.html')
 
 
 def list_view(request, tag_slug=None):
