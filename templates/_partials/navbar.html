@@ -1,0 +1,32 @@
+{% load  static %}
+<header>
+    <div class="flex  item-center justify-between px-14 md:px-20 py-4 bg-[#FFC017] border-bottom border-black  border-3">
+        <div>
+            <a href="{% url 'blog:home' %}">
+                <img src="{% static 'images/logo_medium_edit.png' %}" alt=""/>
+            </a>
+        </div>
+
+        <div class="items-center space-x-5 flex text-[14px]">
+            <div class="hidden space-x-5  md:inline-flex">
+                <h3>Our story</h3>
+                <h3>Membership</h3>
+                <h3>Write</h3>
+                <h3>Sign In</h3>
+            </div>
+            <div class="md:hidden xs:flex hidden">
+                Sign In
+            </div>
+
+            <div class="rounded-full bg-black px-4 py-2 inline-flex">
+                <h3 class="text-md text-white text-[14px]">
+                    Get started
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
