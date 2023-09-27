@@ -1,6 +1,6 @@
 <!-- Sigup with email Modal modal -->
 <div
-  id="defaultModal_Signup_with_email"
+  id="defaultModal_checkout_email"
   tabindex="-1"
   aria-hidden="true"
   class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
@@ -41,42 +41,26 @@
         <h3
           class="text-3xl font-serif align-content-center text-gray-900 dark:text-white"
         >
-          Sign up with email
+          Check your inbox.
         </h3>
         <div class="space-y-8 flex flex-col items-center justify-center">
           <div class="flex items-center justify-center flex-col space-y-2">
-            <h3>Enter your email address to create an</h3>
-            <h3>account</h3>
+            <h3>Click the link we sent to J@gmail.com to</h3>
+            <h3>complete your account set-up.</h3>
           </div>
           <div class="flex items-center justify-center flex-col mt-12">
-            <p>Your email</p>
+            <p>OTP</p>
             <div class="border-b-2 border-black">
               <input type="text" class="border-none focus:ring-0" />
             </div>
           </div>
           <button
-            data-modal-target="defaultModal_checkout_email"
-            data-modal-toggle="defaultModal_checkout_email"
-            data-modal-hide="defaultModal_Signup_with_email"
+            data-modal-hide="defaultModal_checkout_email"
           >
-            <div class="rounded-full bg-black px-10 py-2 inline-flex">
-              <h3 class="text-md text-white text-[14px]">Continue</h3>
+            <div class="rounded-full bg-black px-4 py-2 inline-flex">
+              <h3 class="text-md text-white text-[14px]">ok</h3>
             </div>
           </button>
-        </div>
-        <div>
-          <p>
-            No account?
-            <button
-              data-modal-target="defaultModal"
-              data-modal-toggle="defaultModal"
-              data-modal-hide="defaultModal_Signup_with_email"
-            >
-              <span class="text-[#1A8917] font-bold cursor-pointer">
-                < All sign up options</span
-              >
-            </button>
-          </p>
         </div>
       </div>
       <!-- Modal footer -->
