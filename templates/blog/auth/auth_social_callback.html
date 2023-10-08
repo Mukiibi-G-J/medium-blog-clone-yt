@@ -1,0 +1,49 @@
+{% extends 'auth_base.html' %}
+
+{% block content %}
+<!-- Sigup with email Modal modala -->
+
+  <div class="flex mt-40 md:mt-10 items-center justify-center  h-screen" >
+    <!-- Modal content -->
+    <div class="bg-white  dark:bg-gray-700 max-auto">
+      <!-- Modal body -->
+      <div class="p-6 space-y-6 flex flex-col justify-center items-center">
+        <h3
+          class="text-3xl font-serif align-content-center text-gray-900 dark:text-white"
+        >
+        Almost there!
+        </h3>
+        <div class="space-y-8 flex flex-col items-center justify-center">
+          <div class="flex items-center justify-center flex-col space-y-2">
+            <h3>Finish creating your account for the full Medium experience..</h3>
+          </div>
+          <div class="flex items-center justify-center flex-col mt-12">
+            <p class="text-[#949494]">Your full name</p>
+            <div class="border-b-2 border-black">
+              <input type="text" class="border-none focus:ring-0"value="John Deo" />
+            </div>
+          </div>
+          <div class="flex items-center justify-center flex-col mt-12">
+            <p class="text-[#949494]">Your Email</p>
+            <div class="mt-2">
+                <p>johdeo@gmail.com</p>
+            </div>
+          </div>
+          <button
+            data-modal-hide="defaultModal_checkout_email"
+          >
+            <div class="rounded-full bg-[#1a8917] hover:bg-[#0F730C] px-4 py-2 inline-flex">
+              <h3 class="text-md text-white text-[14px]">create account</h3>
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div
+        class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
+      ></div>
+    </div>
+  </div>
+
+
+{% endblock content %}

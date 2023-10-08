@@ -1,0 +1,70 @@
+{% extends 'auth_base.html' %}
+
+{% block content %}
+<!-- Sigup with email Modal modala -->
+
+  <div class="flex mt-40 md:mt-10 items-center justify-center  h-screen" >
+    <!-- Modal content -->
+    <div class="bg-white  dark:bg-gray-700 max-auto shadow">
+      <!-- Modal body -->
+      <div class="p-6 space-y-6 flex flex-col justify-center items-center">
+        <h3
+          class="text-3xl font-serif align-content-center text-gray-900 dark:text-white"
+        >
+        Sorry, we didn’t recognize that account.
+        </h3>
+        <div class="space-y-8 flex flex-col items-center justify-center">
+          <div class="flex items-center justify-center flex-col space-y-2">
+            <h3>Would you like to create a new Medium account?</h3>
+          </div>
+          <div class="flex items-center justify-center flex-col mt-12" 
+          data-modal-target="defaultModal"
+          data-modal-toggle="defaultModal"
+          >
+            <div
+            class="flex items-center space-x-12 border border-black rounded-full py-2 px-4"
+          >
+            <div>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="ah"
+              >
+                <g fill-rule="evenodd" clip-rule="evenodd">
+                  <path
+                    d="M20.64 12.2c0-.63-.06-1.25-.16-1.84H12v3.49h4.84a4.14 4.14 0 0 1-1.8 2.71v2.26h2.92a8.78 8.78 0 0 0 2.68-6.61z"
+                    fill="#4285F4"
+                  ></path>
+                  <path
+                    d="M12 21a8.6 8.6 0 0 0 5.96-2.18l-2.91-2.26a5.41 5.41 0 0 1-8.09-2.85h-3v2.33A9 9 0 0 0 12 21z"
+                    fill="#34A853"
+                  ></path>
+                  <path
+                    d="M6.96 13.71a5.41 5.41 0 0 1 0-3.42V7.96h-3a9 9 0 0 0 0 8.08l3-2.33z"
+                    fill="#FBBC05"
+                  ></path>
+                  <path
+                    d="M12 6.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58A9 9 0 0 0 3.96 7.96l3 2.33A5.36 5.36 0 0 1 12 6.6z"
+                    fill="#EA4335"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <h3 class="text-md font-sans ml-4">Sign in with Google</h3>
+          </div>
+          </div>
+          
+         
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div
+        class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
+      ></div>
+    </div>
+  </div>
+
+
+{% endblock content %}

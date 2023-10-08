@@ -15,12 +15,13 @@
     {% endcompress %}
 </head>
 <body>
-<div class="">
-    {% include '_partials/navbar.html' %}
+
+      {% include '_partials/auth_nav.html' %}
+
     {% block content %}
     {% endblock content %}
-
+    {% include 'model_popups/signup_model.html' %}
     <script src='{% static "js/flowbite.min.js" %}'></script>
-</div>
+
 </body>
 </html>

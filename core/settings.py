@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'authentication.apps.AuthenticationConfig',
     # third party
     'taggit',
     "django_browser_reload",
