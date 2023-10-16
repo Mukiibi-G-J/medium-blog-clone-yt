@@ -1,5 +1,9 @@
 {% load static %}
-<header class="fixed top-0 w-full z-50">
+
+
+
+<!-- { if true=="true" } -->
+<!-- <header class="fixed top-0 w-full z-50">
   <div>
     <div
       class="w-full flex item-center justify-between px-5 md:px-20 py-4 bg-[#FFC017] border-b-2 border-black"
@@ -39,4 +43,55 @@
       </div>
     </div>
   </div>
+</header> -->
+<!-- { elif } -->
+<header class="fixed top-0 w-full z-50">
+  <div>
+    <div
+      class="w-full flex item-center justify-between px-5 md:px-20 py-4 bg-white border-b-2 border-black"
+    >
+      <div class="flex item-center justify-center space-x-2">
+        <a href="{% url 'blog:home' %}">
+          <img
+            src="{% static 'images/logo_medium_edit_2.png' %}"
+            class="w-28 md:w-full"
+            alt=""
+          />
+        </a>
+        <div class="flex items-center space-x-2 bg-gray-100 rounded-full px-4 py-2">
+          <img src="{% static 'images/search_2.png' %}"  class="h-4 w-4"/>
+          <input placeholder="search" class="outline-none bg-gray-100"  />
+        </div>
+  
+      </div>
+      
+      <div class="items-center space-x-5 flex text-[14px]">
+        <div class="hidden space-x-5 md:inline-flex">
+          <h3>Our story</h3>
+          <h3>Membership</h3>
+          <h3>Write</h3>
+          <h3
+            data-modal-target="defaultModal_Sign_in"
+            data-modal-toggle="defaultModal_Sign_in"
+            class="cursor-pointer"
+          >
+            Sign In
+          </h3>
+        </div>
+        <div class="md:hidden xs:flex hidden">Sign In</div>
+        <button
+          data-modal-target="defaultModal"
+          data-modal-toggle="defaultModal"
+        >
+          <div class="rounded-full bg-black px-4 py-2 inline-flex">
+            <h3 class="text-md text-white text-[14px]">Get started</h3>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
 </header>
+
+<!-- { endif ] -->
+
+
